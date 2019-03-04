@@ -1,0 +1,127 @@
+* {
+    font-family: '微軟正黑體';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #1e5799;
+}
+
+.header {
+    font-size: 220%;
+    font-weight: bold;
+    line-height: 3;
+    text-align: center;
+    text-indent: 16px;
+    color: #fff;
+    background: #000;
+}
+.container {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    background: #fff;
+
+}
+
+h1 {
+    font-size: 150%;
+    line-height: 2;
+    text-align: center;
+    color: #fff;
+    background: blue;
+}
+
+form {
+    display: flex;
+    width: 100%;
+}
+
+input {
+    width: 80%;
+    padding: 5px;
+    font-size: 120%;
+    border: 2px solid red;
+}
+
+#addTodoBtn {
+    font-size: 120%;
+    font-weight: bold;
+    width: 20%;
+    cursor: pointer;
+    padding: 15px 8px;
+    color: #fff;
+    border: unset;
+    background: red;
+}
+
+.deleteBtn {
+    padding: 8px;
+    color: #fff;
+    border: unset;
+    background: red;
+}
+
+
+
+li {
+    line-height: 3;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+/* input{
+    margin: 20px 0 ;
+    position: relative;
+}
+.error{
+    color:red;
+    border:solid 1px red;
+    width:100px;
+    margin: 5px 0;
+    padding: 5px;
+    line-height: 1;
+    position: absolute;
+} */
+.delete {
+    font-weight: bold;
+    line-height: 3;
+    margin-right: 5px;
+    margin-left: -8%;
+
+    /* line-height: 3; */
+    padding: 5px;
+    cursor: pointer;
+    transition: all 1s;
+    color: white;
+    border: unset;
+    background: red;
+}
+
+li:hover .delete {
+    margin-left: 0;
+    transition: all 1s;
+}
+
+.date-right {
+    font-size: 90%;
+    float: right;
+    padding-right: 5px;
+    color: #ababab;
+}
+
+#todoList {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 350px;
+}
+
+#todoList li:nth-child(2n) {
+    background: rgb(247, 247, 247);
+}
