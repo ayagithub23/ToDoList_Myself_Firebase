@@ -17,6 +17,7 @@ body {
     color: #fff;
     background: #000;
 }
+
 .container {
     position: absolute;
     top: 22%;
@@ -27,7 +28,6 @@ body {
     margin: 0 auto;
     transform: translateX(-50%);
     background: #fff;
-
 }
 
 h1 {
@@ -43,10 +43,11 @@ form {
     width: 100%;
 }
 
-input {
+#addTodoInput {
+    font-size: 120%;
+
     width: 80%;
     padding: 5px;
-    font-size: 120%;
     border: 2px solid red;
 }
 
@@ -54,8 +55,8 @@ input {
     font-size: 120%;
     font-weight: bold;
     width: 20%;
-    cursor: pointer;
     padding: 15px 8px;
+    cursor: pointer;
     color: #fff;
     border: unset;
     background: red;
@@ -76,6 +77,17 @@ li {
     list-style-type: none;
 }
 
+li p {
+    display: inline-block;
+    width: 73%;
+}
+
+li input {
+    font-size: 110%;
+    line-height: 1.5;
+    width: 63%;
+}
+
 /* input{
     margin: 20px 0 ;
     position: relative;
@@ -93,8 +105,7 @@ li {
     font-weight: bold;
     line-height: 3;
     margin-right: 5px;
-    margin-left: -8%;
-
+    /* margin-left: -8%; */
     /* line-height: 3; */
     padding: 5px;
     cursor: pointer;
@@ -103,12 +114,10 @@ li {
     border: unset;
     background: red;
 }
-
-li:hover .delete {
+/* li:hover .delete {
     margin-left: 0;
     transition: all 1s;
-}
-
+} */
 .date-right {
     font-size: 90%;
     float: right;
