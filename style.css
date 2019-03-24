@@ -9,15 +9,28 @@ body {
 }
 
 .header {
+    display: flex;
     font-size: 220%;
+    width: 100%;
     font-weight: bold;
-    line-height: 3;
     text-align: center;
     text-indent: 16px;
     color: #fff;
+    justify-content: space-between;
     background: #000;
+    height: 50px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
-
+.user{
+display: flex;
+}
+.user h1{
+    font-size:10px;
+}
+.user img{
+    width: 50px;
+}
 .container {
     position: absolute;
     top: 22%;
@@ -114,6 +127,7 @@ li input {
     border: unset;
     background: red;
 }
+
 /* li:hover .delete {
     margin-left: 0;
     transition: all 1s;

@@ -2,45 +2,23 @@
 <html lang="zh-tw">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>代辦事項</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://momentjs.com/downloads/moment.min.js"></script>
-    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>登入待辦事項系統</title>
+<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
-<body>
-    <div id="wrapper">
-        <div class="header">待辦事項清單</div>
+<body style="display: none;">
 
-        <div class="container">
-            <p id="errorMsg"></p>
-            <h1>Peiya的待辦事項</h1>
-            <form id="inputArea" action="">
-                <input id="addTodoInput" type="text" placeholder="請輸入代辦事項">
-                <button id="addTodoBtn" type="submit">輸入</button><br><br>
-                <!-- <input type="button" value="輸入"><br><br> -->
-                <!-- <textarea rows="4" cols="50"></textarea><br><br> -->
-                <!--<input type="submit" value="送出">-->
-            </form>
-            <ul id="todoList">
-                <!-- <li><span class="delete"><button>刪除</button></span>待辦事項1</li>
-                <li><span class="delete"><button>刪除</button></span>待辦事項2</li>
-                <li><span class="delete"><button>刪除</button></span>待辦事項3</li> -->
-            </ul>
+<button id="login">登入</button>
+<button id="logout">登出</button>
 
-        </div>
-        <div id="footer"></div>
-    </div>
-    </head>
-
+<script src="./firebase.js"></script>
+<script src="./app.js"></script>
+<!-- firebase 初始化 -->
+<!-- https://zh.wikipedia.org/wiki/%E8%B3%87%E6%96%99%E6%93%8D%E7%B8%B1%E8%AA%9E%E8%A8%80 -->
 </body>
-<script src="firebase.js"></script>
-<script src="app.js"></script>
 
 </html>

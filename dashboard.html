@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>代辦事項</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js"></script>
+    <script src="./firebase.js"></script>
+</head>
+
+<body style="display: none;">
+    <div id="wrapper">
+        <div class="header">
+            <p>待辦事項清單</p>
+            <div id="user" class="user">
+                <img src="" alt="">
+                <p></p>
+                <button id="logout">登出</button>
+            </div>
+            
+        </div>
+        
+        <div class="container">
+            <p id="errorMsg"></p>
+            <h1 id="user"><p>Peiya</p>的待辦事項</h1>
+            <form id="inputArea" action="">
+                <input id="addTodoInput" type="text" placeholder="請輸入代辦事項">
+                <button id="addTodoBtn" type="submit">輸入</button><br><br>
+                <!-- <input type="button" value="輸入"><br><br> -->
+                <!-- <textarea rows="4" cols="50"></textarea><br><br> -->
+                <!--<input type="submit" value="送出">-->
+            </form>
+            <ul id="todoList">
+                <!-- <li><span class="delete"><button>刪除</button></span>待辦事項1</li>
+            <li><span class="delete"><button>刪除</button></span>待辦事項2</li>
+            <li><span class="delete"><button>刪除</button></span>待辦事項3</li> -->
+            </ul>
+
+        </div>
+
+        <div id="footer"></div>
+    </div>
+    <script src="./dashboard.js"></script>
+</body>
+<!-- <script src="app.js"></script> -->
+
+</html>

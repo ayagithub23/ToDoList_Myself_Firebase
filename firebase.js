@@ -11,3 +11,6 @@ firebase.initializeApp(config);
 
 // const 無法更動 
 const database = firebase.database();
+
+const googleProvider = new firebase.auth.GoogleAuthProvider();
+const auth = firebase.auth();
